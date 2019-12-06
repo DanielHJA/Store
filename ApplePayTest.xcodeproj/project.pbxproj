@@ -15,6 +15,9 @@
 		7B904FF7239A5A1500D2D382 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B904FF5239A5A1500D2D382 /* LaunchScreen.storyboard */; };
 		7B905002239A5A1500D2D382 /* ApplePayTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B905001239A5A1500D2D382 /* ApplePayTestTests.swift */; };
 		7B90500D239A5A1600D2D382 /* ApplePayTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B90500C239A5A1600D2D382 /* ApplePayTestUITests.swift */; };
+		7B90501C239A5A6400D2D382 /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B90501B239A5A6400D2D382 /* Shoe.swift */; };
+		7B90501E239A5F9600D2D382 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B90501D239A5F9600D2D382 /* Alert.swift */; };
+		7B905020239A5FE600D2D382 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B90501F239A5FE600D2D382 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,10 @@
 		7B905008239A5A1600D2D382 /* ApplePayTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplePayTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B90500C239A5A1600D2D382 /* ApplePayTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayTestUITests.swift; sourceTree = "<group>"; };
 		7B90500E239A5A1600D2D382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B90501A239A5A1F00D2D382 /* ApplePayTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ApplePayTest.entitlements; sourceTree = "<group>"; };
+		7B90501B239A5A6400D2D382 /* Shoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
+		7B90501D239A5F9600D2D382 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		7B90501F239A5FE600D2D382 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +106,13 @@
 		7B904FE9239A5A1400D2D382 /* ApplePayTest */ = {
 			isa = PBXGroup;
 			children = (
+				7B90501A239A5A1F00D2D382 /* ApplePayTest.entitlements */,
+				7B90501B239A5A6400D2D382 /* Shoe.swift */,
 				7B904FEA239A5A1400D2D382 /* AppDelegate.swift */,
 				7B904FEC239A5A1400D2D382 /* SceneDelegate.swift */,
 				7B904FEE239A5A1400D2D382 /* ViewController.swift */,
+				7B90501D239A5F9600D2D382 /* Alert.swift */,
+				7B90501F239A5FE600D2D382 /* Store.swift */,
 				7B904FF0239A5A1400D2D382 /* Main.storyboard */,
 				7B904FF3239A5A1500D2D382 /* Assets.xcassets */,
 				7B904FF5239A5A1500D2D382 /* LaunchScreen.storyboard */,
@@ -259,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B90501C239A5A6400D2D382 /* Shoe.swift in Sources */,
 				7B904FEF239A5A1400D2D382 /* ViewController.swift in Sources */,
 				7B904FEB239A5A1400D2D382 /* AppDelegate.swift in Sources */,
+				7B905020239A5FE600D2D382 /* Store.swift in Sources */,
+				7B90501E239A5F9600D2D382 /* Alert.swift in Sources */,
 				7B904FED239A5A1400D2D382 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ApplePayTest/ApplePayTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6ZL797GF7H;
 				INFOPLIST_FILE = ApplePayTest/Info.plist;
@@ -452,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ApplePayTest/ApplePayTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6ZL797GF7H;
 				INFOPLIST_FILE = ApplePayTest/Info.plist;
