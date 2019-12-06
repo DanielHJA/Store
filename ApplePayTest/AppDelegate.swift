@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import Stripe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        configureStripe()
         return true
+    }
+    
+    private func configureStripe() {
+        STPPaymentConfiguration.shared().publishableKey = "pk_test_ExzsmsT80b3RuzjsopT3W74o"
     }
 
     // MARK: UISceneSession Lifecycle

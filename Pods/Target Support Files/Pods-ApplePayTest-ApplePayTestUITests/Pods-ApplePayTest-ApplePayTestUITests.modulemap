@@ -1,0 +1,6 @@
+framework module Pods_ApplePayTest_ApplePayTestUITests {
+  umbrella header "Pods-ApplePayTest-ApplePayTestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

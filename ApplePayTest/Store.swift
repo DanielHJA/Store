@@ -8,6 +8,7 @@
 
 import UIKit
 import PassKit
+import Stripe
 
 class Store: NSObject {
     static let shared: Store = Store()
@@ -20,7 +21,7 @@ class Store: NSObject {
     }
 
     func createPaymentItem(for shoe: Shoe) -> PKPaymentSummaryItem {
-        return PKPaymentSummaryItem(label: shoe.name, amount: NSDecimalNumber(value: shoe.price))
+        return PKPaymentSummaryItem(label: shoe.name, amount: NSDecimalNumber(value: shoe.price), type: .final)
     }
     
     func canMakeMayments() -> Bool {
@@ -50,7 +51,7 @@ class Store: NSObject {
             return
         }
         
-        paymentAuthorizationController.delegate = self
+        paymentAuthorizationController.delegate = viewController as? PKPaymentAuthorizationViewControllerDelegate
         viewController.present(paymentAuthorizationController, animated: true, completion: nil)
     }
     
@@ -67,17 +68,3 @@ class Store: NSObject {
     
 }
 
-extension Store: PKPaymentAuthorizationViewControllerDelegate {
-    
-    func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
-        controller.dismiss(animated: true, completion: nil)
-    }
-        
-    func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, handler completion: @escaping (PKPaymentAuthorizationResult) -> Void) {
-        controller.dismiss(animated: true, completion: nil)
-        if let viewController = UIApplication.shared.windows.first?.rootViewController {
-            Alert.displayDefaultAlert(title: "Success", message: "The Apple Pay Transaction was completed successfully", presentingViewController: viewController)
-        }
-    }
-    
-}

@@ -8,6 +8,7 @@
 
 import UIKit
 import PassKit
+import Stripe
 
 class ViewController: UIViewController {
 
@@ -59,6 +60,59 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let priceString = String(format: "%.02f", shoes[row].price)
         priceLabel.text = "Price = $\(priceString)"
+    }
+    
+}
+
+extension ViewController: PKPaymentAuthorizationViewControllerDelegate, STPAuthenticationContext {
+    
+    func authenticationPresentingViewController() -> UIViewController {
+        return self
+    }
+    
+    func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+        
+    func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, handler completion: @escaping (PKPaymentAuthorizationResult) -> Void) {
+
+        STPAPIClient.shared().createPaymentMethod(with: payment) { (method, error) in
+            
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            
+            if let method = method {
+                let clientSecret = "sk_test_7yqIZXrNHzT9IkvLrm54zS9x"
+                let paymentIntentParams = STPPaymentIntentParams(clientSecret: clientSecret)
+                paymentIntentParams.paymentMethodId = method.stripeId
+                
+                STPPaymentHandler.shared().confirmPayment(withParams: paymentIntentParams, authenticationContext: self) { (status, intent, error) in
+                    switch status {
+                    case .succeeded:
+                        print("Payment success")
+                        completion(PKPaymentAuthorizationResult(status: .success, errors: nil))
+                    case .canceled:
+                        print("Payment was cancelled")
+                        completion(PKPaymentAuthorizationResult(status: .failure, errors: nil))
+                    case .failed:
+                        print("Payment failed")
+                        let errors = [STPAPIClient.pkPaymentError(forStripeError: error)].compactMap({ $0 })
+                        completion(PKPaymentAuthorizationResult(status: .failure, errors: errors))
+                    @unknown default:
+                        break
+                    }
+                }
+                
+            }
+            
+        }
+        
+            dismiss(animated: true, completion: nil)
+//        if let viewController = UIApplication.shared.windows.first?.rootViewController {
+//            Alert.displayDefaultAlert(title: "Success", message: "The Apple Pay Transaction was completed successfully", presentingViewController: viewController)
+//        }
     }
     
 }

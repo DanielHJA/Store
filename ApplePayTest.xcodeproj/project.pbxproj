@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2006DA9ABBCB1B535B55E421 /* Pods_ApplePayTest_ApplePayTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490FA5E69D12236F668C0DB6 /* Pods_ApplePayTest_ApplePayTestUITests.framework */; };
 		7B904FEB239A5A1400D2D382 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B904FEA239A5A1400D2D382 /* AppDelegate.swift */; };
 		7B904FED239A5A1400D2D382 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B904FEC239A5A1400D2D382 /* SceneDelegate.swift */; };
 		7B904FEF239A5A1400D2D382 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B904FEE239A5A1400D2D382 /* ViewController.swift */; };
@@ -18,6 +19,8 @@
 		7B90501C239A5A6400D2D382 /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B90501B239A5A6400D2D382 /* Shoe.swift */; };
 		7B90501E239A5F9600D2D382 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B90501D239A5F9600D2D382 /* Alert.swift */; };
 		7B905020239A5FE600D2D382 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B90501F239A5FE600D2D382 /* Store.swift */; };
+		9C8AB0A8F5347FB50A960597 /* Pods_ApplePayTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C1A1133A598AF5BCC567E /* Pods_ApplePayTestTests.framework */; };
+		9F791859C73396B2302FE978 /* Pods_ApplePayTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA17A37255B1DD80FA36AF7C /* Pods_ApplePayTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10FA90C6EA59058EB6463451 /* Pods-ApplePayTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePayTest.release.xcconfig"; path = "Target Support Files/Pods-ApplePayTest/Pods-ApplePayTest.release.xcconfig"; sourceTree = "<group>"; };
+		1AEEF806F3C0AE57FB9F5B94 /* Pods-ApplePayTest-ApplePayTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePayTest-ApplePayTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ApplePayTest-ApplePayTestUITests/Pods-ApplePayTest-ApplePayTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		222C1A1133A598AF5BCC567E /* Pods_ApplePayTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplePayTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		490FA5E69D12236F668C0DB6 /* Pods_ApplePayTest_ApplePayTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplePayTest_ApplePayTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		687DCCB173065D7AD2F91F2A /* Pods-ApplePayTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePayTest.debug.xcconfig"; path = "Target Support Files/Pods-ApplePayTest/Pods-ApplePayTest.debug.xcconfig"; sourceTree = "<group>"; };
 		7B904FE7239A5A1400D2D382 /* ApplePayTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplePayTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B904FEA239A5A1400D2D382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B904FEC239A5A1400D2D382 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +64,10 @@
 		7B90501B239A5A6400D2D382 /* Shoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
 		7B90501D239A5F9600D2D382 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		7B90501F239A5FE600D2D382 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		AB4FED913D4D41E5F54E810B /* Pods-ApplePayTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePayTestTests.release.xcconfig"; path = "Target Support Files/Pods-ApplePayTestTests/Pods-ApplePayTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB3C5487DE3E469EAD2DCE98 /* Pods-ApplePayTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePayTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ApplePayTestTests/Pods-ApplePayTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDAF3E6290BA5300B21BDFDD /* Pods-ApplePayTest-ApplePayTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePayTest-ApplePayTestUITests.release.xcconfig"; path = "Target Support Files/Pods-ApplePayTest-ApplePayTestUITests/Pods-ApplePayTest-ApplePayTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA17A37255B1DD80FA36AF7C /* Pods_ApplePayTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplePayTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F791859C73396B2302FE978 /* Pods_ApplePayTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8AB0A8F5347FB50A960597 /* Pods_ApplePayTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2006DA9ABBCB1B535B55E421 /* Pods_ApplePayTest_ApplePayTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +105,8 @@
 				7B905000239A5A1500D2D382 /* ApplePayTestTests */,
 				7B90500B239A5A1600D2D382 /* ApplePayTestUITests */,
 				7B904FE8239A5A1400D2D382 /* Products */,
+				A447DF1BEE4CB8C59DC12E69 /* Pods */,
+				A4E3333D82D4254AEEF0520F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +156,30 @@
 			path = ApplePayTestUITests;
 			sourceTree = "<group>";
 		};
+		A447DF1BEE4CB8C59DC12E69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				687DCCB173065D7AD2F91F2A /* Pods-ApplePayTest.debug.xcconfig */,
+				10FA90C6EA59058EB6463451 /* Pods-ApplePayTest.release.xcconfig */,
+				1AEEF806F3C0AE57FB9F5B94 /* Pods-ApplePayTest-ApplePayTestUITests.debug.xcconfig */,
+				EDAF3E6290BA5300B21BDFDD /* Pods-ApplePayTest-ApplePayTestUITests.release.xcconfig */,
+				BB3C5487DE3E469EAD2DCE98 /* Pods-ApplePayTestTests.debug.xcconfig */,
+				AB4FED913D4D41E5F54E810B /* Pods-ApplePayTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4E3333D82D4254AEEF0520F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA17A37255B1DD80FA36AF7C /* Pods_ApplePayTest.framework */,
+				490FA5E69D12236F668C0DB6 /* Pods_ApplePayTest_ApplePayTestUITests.framework */,
+				222C1A1133A598AF5BCC567E /* Pods_ApplePayTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B905011239A5A1600D2D382 /* Build configuration list for PBXNativeTarget "ApplePayTest" */;
 			buildPhases = (
+				E38A8F0B2040F9D0256DAAC0 /* [CP] Check Pods Manifest.lock */,
 				7B904FE3239A5A1400D2D382 /* Sources */,
 				7B904FE4239A5A1400D2D382 /* Frameworks */,
 				7B904FE5239A5A1400D2D382 /* Resources */,
+				F98CEA201EAA60625B277F86 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B905014239A5A1600D2D382 /* Build configuration list for PBXNativeTarget "ApplePayTestTests" */;
 			buildPhases = (
+				B88BDC284BA3079C9C94C369 /* [CP] Check Pods Manifest.lock */,
 				7B904FF9239A5A1500D2D382 /* Sources */,
 				7B904FFA239A5A1500D2D382 /* Frameworks */,
 				7B904FFB239A5A1500D2D382 /* Resources */,
@@ -181,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B905017239A5A1600D2D382 /* Build configuration list for PBXNativeTarget "ApplePayTestUITests" */;
 			buildPhases = (
+				61B46961ACDCBD1A8FA77968 /* [CP] Check Pods Manifest.lock */,
 				7B905004239A5A1600D2D382 /* Sources */,
 				7B905005239A5A1600D2D382 /* Frameworks */,
 				7B905006239A5A1600D2D382 /* Resources */,
+				D5BFD496EF83E058A6E70025 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +310,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61B46961ACDCBD1A8FA77968 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApplePayTest-ApplePayTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B88BDC284BA3079C9C94C369 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApplePayTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5BFD496EF83E058A6E70025 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApplePayTest-ApplePayTestUITests/Pods-ApplePayTest-ApplePayTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApplePayTest-ApplePayTestUITests/Pods-ApplePayTest-ApplePayTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ApplePayTest-ApplePayTestUITests/Pods-ApplePayTest-ApplePayTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E38A8F0B2040F9D0256DAAC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApplePayTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F98CEA201EAA60625B277F86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApplePayTest/Pods-ApplePayTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApplePayTest/Pods-ApplePayTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ApplePayTest/Pods-ApplePayTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B904FE3239A5A1400D2D382 /* Sources */ = {
@@ -446,6 +595,7 @@
 		};
 		7B905012239A5A1600D2D382 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 687DCCB173065D7AD2F91F2A /* Pods-ApplePayTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ApplePayTest/ApplePayTest.entitlements;
@@ -465,6 +615,7 @@
 		};
 		7B905013239A5A1600D2D382 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10FA90C6EA59058EB6463451 /* Pods-ApplePayTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ApplePayTest/ApplePayTest.entitlements;
@@ -484,6 +635,7 @@
 		};
 		7B905015239A5A1600D2D382 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB3C5487DE3E469EAD2DCE98 /* Pods-ApplePayTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +658,7 @@
 		};
 		7B905016239A5A1600D2D382 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB4FED913D4D41E5F54E810B /* Pods-ApplePayTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +681,7 @@
 		};
 		7B905018239A5A1600D2D382 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AEEF806F3C0AE57FB9F5B94 /* Pods-ApplePayTest-ApplePayTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +702,7 @@
 		};
 		7B905019239A5A1600D2D382 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDAF3E6290BA5300B21BDFDD /* Pods-ApplePayTest-ApplePayTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
