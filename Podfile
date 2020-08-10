@@ -8,6 +8,7 @@ target 'ApplePayTest' do
   # Pods for ApplePayTest
 
 	pod 'Stripe'
+	pod 'Firebase'
 
   target 'ApplePayTestTests' do
     inherit! :search_paths

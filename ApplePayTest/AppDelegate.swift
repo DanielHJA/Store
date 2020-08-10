@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func configureStripe() {
-        STPPaymentConfiguration.shared().publishableKey = "pk_test_ExzsmsT80b3RuzjsopT3W74o"
+        Stripe.setDefaultPublishableKey("pk_test_DzI3hCnZuEyqSD3ArNwrocsq00Q1tj4yfZ")
     }
 
     // MARK: UISceneSession Lifecycle

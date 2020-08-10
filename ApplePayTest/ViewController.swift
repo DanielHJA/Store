@@ -84,7 +84,7 @@ extension ViewController: PKPaymentAuthorizationViewControllerDelegate, STPAuthe
             }
             
             if let method = method {
-                let clientSecret = "sk_test_7yqIZXrNHzT9IkvLrm54zS9x"
+                let clientSecret = "sk_test_UR0O6QZ9uMDSJq5wMW0QxaFg00j0kEi4mg"
                 let paymentIntentParams = STPPaymentIntentParams(clientSecret: clientSecret)
                 paymentIntentParams.paymentMethodId = method.stripeId
                 

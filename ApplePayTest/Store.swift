@@ -42,6 +42,7 @@ class Store: NSObject {
         request.merchantCapabilities = [.capability3DS]
         request.supportedNetworks = paymentNetworks
         request.paymentSummaryItems = paymentSummaryItems
+        request.requiredBillingContactFields = [.emailAddress]
         return request
     }
     
